@@ -1,0 +1,10 @@
+# Never upload DHS/NFHS data (redistribution is not permitted)
+*.dta
+*.DTA
+*.csv
+*.zip
+*.smcl
+*.log
+lbw_outputs/
+__pycache__/
+.ipynb_checkpoints/
