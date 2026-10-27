@@ -1,0 +1,22 @@
+,mean_abs_shap
+Preceding birth interval,0.1566
+Maternal height,0.1371
+Region: Northeast,0.1148
+Birth order,0.0852
+Wealth index,0.0613
+Maternal education,0.0595
+Region: East,0.0537
+Antenatal care visits,0.0519
+Religion: Christian,0.0455
+Pregnancy complications,0.0304
+Region: Central,0.0259
+Region: South,0.022
+Maternal age at birth,0.0199
+Intended pregnancy,0.0149
+Religion: Muslim,0.0104
+Tobacco use,0.0074
+Religion: Other,0.0067
+Urban residence,0.0043
+Region: West,0.0032
+Divorced/separated/other,0.0014
+Widowed,0.0003
