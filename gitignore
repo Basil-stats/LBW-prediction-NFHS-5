@@ -8,3 +8,4 @@
 lbw_outputs/
 __pycache__/
 .ipynb_checkpoints/
+!results/*.csv
