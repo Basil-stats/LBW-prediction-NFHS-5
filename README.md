@@ -1,9 +1,5 @@
 # Predicting low birth weight from antenatal information using machine learning (NFHS-5, India)
 
-Analysis code for the manuscript:
-
-> Kamble V, Edolikkandy B. *Predicting low birth weight from antenatal information using machine learning: Evidence from the National Family Health Survey-5, India.* BMC Public Health (under review).
-
 ## Contents
 
 | File | Purpose |
