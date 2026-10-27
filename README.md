@@ -42,13 +42,13 @@ The data are **not** included in this repository. NFHS-5 (2019–21) data are av
 | Logistic regression, class-weighted | 0.589 (0.582–0.596) | – | – |
 
 ### ROC, precision–recall and calibration curves
-![Curves](results/figures/curves_A_antenatal_weighted.png)
+![Curves](results/Figures/curves_A_antenatal_weighted.png)
 
 ### Calibration before and after recalibration
-![Calibration](results/figures/calibration_final.png)
+![Calibration](results/Figures/calibration_final.png)
 
 ### SHAP feature importance
-![SHAP](results/figures/shap_beeswarm_A_antenatal.png)
+![SHAP](results/Figures/shap_beeswarm_A_antenatal.png)
 
 ## Contact
 
