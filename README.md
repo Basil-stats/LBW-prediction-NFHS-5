@@ -8,9 +8,8 @@ Analysis code for the manuscript:
 
 | File | Purpose |
 |---|---|
-| `codes_revised.do` | Stata 17: builds the analytical sample from the NFHS-5 children's recode file (IAKR7EFL.DTA), codes all variables, produces Table 1 and the survey-weighted logistic regression (Table 2), and exports `data.csv` for Python |
-| `LBW_revised_pipeline.py` | Python: trains and evaluates all models (Table 3, Table S2, Figs. 2 and S1–S4) |
-| `lbw_shap_final_region.py` | Python: refits the selected model (antenatal XGBoost with class weighting) for calibration, recalibration and SHAP figures (Figs. 3, 4 and S5) |
+| `codes.do` | Stata 17: builds the analytical sample from the NFHS-5 children's recode file (IAKR7EFL.DTA), codes all variables, produces Table 1 and the survey-weighted logistic regression (Table 2), and exports `data.csv` for Python |
+| `LBW.py` | Python: trains and evaluates all models (Table 3, Table S2, Figs. 2 and S1–S4) |
 | `requirements.txt` | Python package versions used |
 
 ## Data
@@ -19,15 +18,14 @@ The data are **not** included in this repository. NFHS-5 (2019–21) data are av
 
 ## How to reproduce
 
-1. **Stata.** Edit the file paths at the top of `codes_revised.do`, then run the whole file. It creates `data.csv`. Final analytical sample: 141,349 most recent births.
+1. **Stata.** Edit the file paths at the top of `codes.do`, then run the whole file. It creates `data.csv`. Final analytical sample: 141,349 most recent births.
 2. **Python 3.14.** Install the packages:
    ```
    pip install -r requirements.txt
    ```
 3. Edit `DATA_PATH` and `OUT_DIR` at the top of each Python script, then run:
    ```
-   python LBW_revised_pipeline.py
-   python lbw_shap_final_region.py
+   python LBW.py
    ```
 
 ## Methods in brief
@@ -45,7 +43,3 @@ Random seed: 42.
 ## Contact
 
 Basil Edolikkandy, International Institute for Population Sciences, Mumbai (eybasil@gmail.com)
-
-## License
-
-MIT
