@@ -34,7 +34,21 @@ The data are **not** included in this repository. NFHS-5 (2019–21) data are av
 - **Evaluation:** ROC-AUC and PR-AUC with bootstrap 95% CIs, sensitivity, specificity, PPV, NPV, F1, Brier score and calibration. Probabilities are recalibrated with Platt scaling.
 - **Reporting:** follows TRIPOD+AI.
 
-Random seed: 42.
+## Key results
+
+| Model (antenatal predictors) | Test ROC-AUC (95% CI) | Sensitivity | Specificity |
+|---|---|---|---|
+| XGBoost, class-weighted (selected) | 0.600 (0.593–0.607) | 57.2% | 56.6% |
+| Logistic regression, class-weighted | 0.589 (0.582–0.596) | – | – |
+
+### ROC, precision–recall and calibration curves
+![Curves](results/figures/curves_A_antenatal_weighted.png)
+
+### Calibration before and after recalibration
+![Calibration](results/figures/calibration_final.png)
+
+### SHAP feature importance
+![SHAP](results/figures/shap_beeswarm_A_antenatal.png)
 
 ## Contact
 
